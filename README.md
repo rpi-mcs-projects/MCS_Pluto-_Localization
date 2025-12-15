@@ -29,11 +29,14 @@ MATLAB requires these underlying libraries to communicate with the SDR hardware 
 
 ### 2. MATLAB (Receiver Pipeline) (tested with MATLAB 2025b) - for Windows PC
 * **Required Add-Ons (Install via Home -> Add-Ons):**
-* **Analog Devices Transceiver Toolbox**  - (note: this is NOT the standard ADALM-PLUTO toolbox, as this is needed for custom AD9361 SDR configuration)
-* **Communications Toolbox**
-* **DSP System Toolbox**
+* **Analog Devices, Inc. Transceiver Toolbox**  - (note: this is NOT the standard ADALM-PLUTO toolbox, it requires the following dependencies)
+  * Simulink
+  * Communications Toolbox
+  * DSP System Toolbox
+  * HDL Coder
+  * Signal Processing Toolbox
+  * Simulink Coder  
 * **Phased Array System Toolbox**
-* **Signal Processing Toolbox**
 
 ### 3. GNU Radio (Transmitter Pipeline) (tested with v3.10.12) - for other PC
 * **gr-iio** (Standard `iio` blocks for PlutoSDR Sink).
